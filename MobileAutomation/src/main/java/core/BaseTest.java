@@ -13,7 +13,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 
 public class BaseTest {
 
-    private Properties config;
+    private final Properties config;
     public BaseTest() {
         this.config = new Properties();
         try {
@@ -22,6 +22,7 @@ public class BaseTest {
             e.printStackTrace();
         }
     }
+
 
     protected AppiumDriver<MobileElement> initDriver() throws MalformedURLException {
         // Set up the desired capabilities

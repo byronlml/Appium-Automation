@@ -69,6 +69,14 @@
                     <target>11</target>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-report-plugin</artifactId>
+                <version>3.2.3</version>
+                <configuration>
+                    <outputDirectory>${basedir}/target/newsite</outputDirectory>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
