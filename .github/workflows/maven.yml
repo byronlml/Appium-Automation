@@ -28,13 +28,13 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build with Maven
-        run: mvn -B package -e -X --file MobileAutomation/pom.xml
+        run: mvn -B package -e -X --file C:\Users\ASUS\Documents\Automation\MobileAutomation\MobileAutomation\pom.xml
       - name: Install Appium Server
         run: |
           npm install -g appium@v1.22.3
           appium -v
           appium &>/dev/null &
-      - name: run appium android test
+      - name: Run appium android test
         uses: reactivecircus/android-emulator-runner@v2
         with:
           api-level: 29
