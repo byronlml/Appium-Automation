@@ -34,7 +34,7 @@ Este comando ejecutará la automatización contra todos los dispositivos y versi
 
 # Estructura del proyecto
 
-El proyecto está organizado de la siguiente manera:
+El proyecto está organizado basado en el patron de diseño POM:
 
 - src/main/java: Contiene el código fuente de la automatización.
 - src/main/resources: Contiene el archivo de configuración configuration.properties.
